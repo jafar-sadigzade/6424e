@@ -1,4 +1,72 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+nav {
+    background-color: #007bff; /* Example navbar color */
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1; /* Allow main content to expand */
+}
+
+.left-panel {
+    width: 200px; /* Fixed width for left panel */
+    background-color: #f0f0f0; /* Example panel color */
+    padding: 20px;
+}
+
+.left-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-panel li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    flex-grow: 1; /* Allow main content to expand */
+    padding: 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden; /* Hide images that overflow the container */
+}
+
+.slider img {
+    width: 100%;
+    display: block; /* Prevent small space below images */
+}
+
 .h1-title {
-    background-color: black;
-    color: brown;
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add some spacing below the title */
 }
